@@ -3,6 +3,9 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import { TweetsList } from './components/TweetsList'
+import { initialTweets } from "./data/tweets";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -114,6 +117,10 @@ function App() {
       </section>
 
       <div className="ticks"></div>
+      <section>
+        <h2>Mini Twitter</h2>
+        <TweetsList tweets={initialTweets} />
+      </section>
       <section id="spacer"></section>
     </>
   )

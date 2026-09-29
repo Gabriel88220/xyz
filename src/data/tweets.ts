@@ -1,5 +1,5 @@
 // src/data/tweets.ts
-import { Tweet } from "../types/Tweet";
+import type { Tweet } from "../types/Tweet";
 
 export const initialTweets: Array<Tweet> = [
   {
@@ -9,9 +9,7 @@ export const initialTweets: Array<Tweet> = [
     content: "Premier tweet court.",
     createdAt: "2026-07-01T09:12:00.000Z",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/500px-Ada_Lovelace_portrait.jpg",
-      alt: "Portrait d'Ada Lovelace"
-    }
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/500px-Ada_Lovelace_portrait.jpg", alt: "Portrait d'Ada Lovelace"}
   },
   {
     id: crypto.randomUUID(),
@@ -28,7 +26,59 @@ export const initialTweets: Array<Tweet> = [
     content: "Un tweet sans image.",
     createdAt: "2026-07-03T11:00:00.000Z",
     image: undefined
-  }
+  },
+  {
+  id: crypto.randomUUID(),
+  authorName: "Margaret Hamilton",
+  authorHandle: "hamilton",
+  content: "Déboguer, c’est comprendre ce que l’on pensait avoir compris.",
+  createdAt: "2026-07-04T08:30:00.000Z",
+  image: {url: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Margaret_Hamilton_1995.jpg", alt: "Portrait de Margaret Hamilton"}
+},
+{
+  id: crypto.randomUUID(),
+  authorName: "Tim Berners-Lee",
+  authorHandle: "timbl",
+  content: "Le web doit rester ouvert, accessible et libre.",
+  createdAt: "2026-07-05T14:12:00.000Z"
+},
+{
+  id: crypto.randomUUID(),
+  authorName: "Katherine Johnson",
+  authorHandle: "kjohnson",
+  content: "Les mathématiques sont la poésie de la logique.",
+  createdAt: "2026-07-06T09:45:00.000Z",
+  image: {url: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Katherine_Johnson_1983.jpg", alt: "Portrait de Katherine Johnson"}
+},
+{
+  id: crypto.randomUUID(),
+  authorName: "Dennis Ritchie",
+  authorHandle: "dmr",
+  content: "C est un langage simple, mais puissant. Un peu comme la vie.",
+  createdAt: "2026-07-07T16:20:00.000Z"
+},
+{
+  id: crypto.randomUUID(),
+  authorName: "Barbara Liskov",
+  authorHandle: "liskov",
+  content: "L’abstraction est la clé pour gérer la complexité.",
+  createdAt: "2026-07-08T11:10:00.000Z"
+},
+{
+  id: crypto.randomUUID(),
+  authorName: "Linus Torvalds",
+  authorHandle: "linus",
+  content: "Parfois, le code parfait est celui que l’on n’a pas encore écrit.",
+  createdAt: "2026-07-09T18:00:00.000Z",
+  image: {url: "https://upload.wikimedia.org/wikipedia/commons/6/69/Linus_Torvalds.jpeg", alt: "Portrait de Linus Torvalds"}
+},
+{
+  id: crypto.randomUUID(),
+  authorName: "Radia Perlman",
+  authorHandle: "radia",
+  content: "Les réseaux doivent être fiables, même quand les humains ne le sont pas.",
+  createdAt: "2026-07-10T07:55:00.000Z"
+}
 ];
 
 
